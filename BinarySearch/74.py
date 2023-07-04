@@ -1,6 +1,17 @@
 ## Author: ZhiyaoWen
 
 ## Find the target in a matrix, it is different with 378, which to find the Kth number.
+'''
+it guarante 
+
+Each row is sorted in non-decreasing order.
+The first integer of each row is greater than the last integer of the previous row.
+
+'''
+
+
+
+
 
 from typing import List
 
