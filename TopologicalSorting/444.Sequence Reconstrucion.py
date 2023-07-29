@@ -11,7 +11,9 @@ from typing import List
 def sequenceReconstruction(org:List[int], seqs:List[List[int]]) -> bool:
     #edge case handle
     #the unique nodes are in org mush queal seqs 
+    #seq:[[]], set.union must covert set
     nodes = functools.reduce(set.union, seqs, set()) #reduce process for particular function
+    
     if nodes != set(org):
         return False
     
@@ -46,3 +48,4 @@ if __name__ == "__main__":
     org = [4,1,5,2,6,3]
     seqs = [[5,2,6,3], [4,1,5,2]]
     print(sequenceReconstruction(org, seqs))
+
