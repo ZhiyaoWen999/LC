@@ -1,6 +1,6 @@
 class Solution:
     def dominantIndex(self, nums: List[int]) -> int:
-        # find the max value and second maximum
+        # find the max value and second maximum, then compare max value > 2 * sec max value
 
         m1, m2, index = -1, -1, 0
 
@@ -10,3 +10,4 @@ class Solution:
             elif num > m2:
                 m2 = num
         return index if m1 >= m2 * 2 else -1
+    

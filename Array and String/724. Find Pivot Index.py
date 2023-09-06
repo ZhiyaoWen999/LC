@@ -1,5 +1,6 @@
 class Solution:
     def pivotIndex(self, nums: List[int]) -> int:
+        #leftsum * 2 + nums[i] == total
         total = sum(nums)
         
         n = len(nums)
